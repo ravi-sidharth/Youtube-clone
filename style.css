@@ -7,8 +7,10 @@
 body {
     display: flex;
     justify-content: center;
-    /* overflow-x: hidden; */
-    /* scrollbar-width: none; */
+    overflow-x: hidden;
+    scrollbar-width: none;
+    background-color: black;
+
 }
 
 .main-container {
@@ -26,11 +28,15 @@ body {
 .header {
     width: 97vw;
     margin: 0 auto;
-    border: 2px solid red;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
+    background-color: black;
+
+    
 }
 
 .col {
@@ -78,19 +84,25 @@ input[type="text"] {
 }
 
 .left-content {
-    min-width: 300px;
-    border: 10px solid pink;
+    position: sticky;
+    top: 70px;
+    cursor: pointer;
+    width: 15%;
+    overflow-y: scroll;
+    /* border: 10px solid pink; */
 }
 
 .right-content {  
-    /* display: inline-flex; */
     /* flex-grow: 1; */
-    max-width: calc(100%-300px); 
-    border: 2px solid rgb(2, 2, 10);
+    width: 85%; 
+    /* border: 2px solid rgb(2, 2, 10); */
 }
 
 .nav-bar {
+    position: sticky;
+    top: 67px;
     overflow-x: scroll;
+    background-color: black;
 }
 .nav-bar ul {
     display: flex;
@@ -107,7 +119,9 @@ input[type="text"] {
 }
 
 .nav-bar ul li a {
+    color: white;
     text-decoration: none;
+    
 }
  
 .left-content .sidebar{
@@ -122,6 +136,8 @@ input[type="text"] {
     background-color: #3E3E3E;
 }
 .left-content a{
+    font-size: 1rem;
+    color: white;
     text-decoration: none;
 }
 
@@ -130,16 +146,58 @@ hr {
 }
 
 .right-body-box {
-   padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    /* grid-template-columns: repeat(3,1fr); */
-    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 }
 
 .box {
-    padding: 10px;
-    /* display: inline-flex; */
-    outline: 5px solid blue;
+    margin: .5rem 0;
+    padding: .5rem;
 }
 
+.box iframe {
+    width: 100%;
+    height: 230px;
+    border-radius: 1rem;
+}
+
+.box img {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+
+.box ul {
+    margin-top: .5rem;
+    text-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+}
+
+.box ul >li+li+li{
+    margin-left: 4.2rem;
+}
+
+.box ul li {
+    font-weight: 700;
+    list-style: none;
+}
+
+.box:hover {
+    border-radius: 1rem;
+    background-color:#071E33;
+}
+
+.footer>p{
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.footer p+p {
+    width: 100%;
+}
+
+blockquote {
+    color: #3E3E3E;
+    /* font-size: .6rem; */
+}
