@@ -9,12 +9,12 @@ body {
     justify-content: center;
     overflow-x: hidden;
     scrollbar-width: none;
-    background-color: black;
-
+ 
 }
 
 .main-container {
-    min-width: 1522px;
+    /* min-width: 1522px; */
+    background-color: black;
 }
 
 #img-logo {
@@ -34,15 +34,35 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-    background-color: black;
+    background-color:black;
 
     
 }
+i {
+    color: white;
+}
 
+input {
+    background-color: #3E3E3E;
+    color: white;
+}
 .col {
     display: flex;
     gap: 2rem;
     margin: .5em 0 ;
+}
+
+.col .fa-youtube{
+    color: red;
+}
+.col i+i+h4 {
+    margin-left: -1.9rem;
+    color: white;
+    margin-top: -.2rem;
+}
+.col h4 sup {
+    font-size: .7rem;
+    color: #3E3E3E;
 }
 
 #search-bar-icon {
@@ -87,7 +107,7 @@ input[type="text"] {
     position: sticky;
     top: 70px;
     cursor: pointer;
-    width: 15%;
+    width: 400px;
     overflow-y: scroll;
     /* border: 10px solid pink; */
 }
@@ -102,7 +122,8 @@ input[type="text"] {
     position: sticky;
     top: 67px;
     overflow-x: scroll;
-    background-color: black;
+    background-color:black;
+    padding: 1rem;
 }
 .nav-bar ul {
     display: flex;
@@ -132,9 +153,48 @@ input[type="text"] {
     font-size: 1.5rem;
 
 }
+
+.footer>p{
+    color: rgba(255, 255, 255, 0.443);
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.footer p+p {
+    width: 100%;
+}
+
+blockquote {
+    color: #3E3E3E;
+}
+
+.right-body-box .box li+li {
+    color: white;
+}
+
+.right-body-box ul+ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.9rem;
+ 
+}
+
+.right-body-box .box ul+ul a{
+    text-decoration: none;
+    color:#ddc1a948;
+    
+}
+
+.right-body-box .box ul +ul>li+li {
+    color:#ddc1a979;
+    margin-top: -1rem;
+}
+
 .left-content .sidebar:hover {
     background-color: #3E3E3E;
 }
+
+
 .left-content a{
     font-size: 1rem;
     color: white;
@@ -188,16 +248,3 @@ hr {
     background-color:#071E33;
 }
 
-.footer>p{
-    width: 70%;
-    margin-bottom: 1rem;
-}
-
-.footer p+p {
-    width: 100%;
-}
-
-blockquote {
-    color: #3E3E3E;
-    /* font-size: .6rem; */
-}
