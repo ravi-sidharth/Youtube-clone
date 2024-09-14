@@ -106,8 +106,7 @@ svg {
     position: sticky;
     top: 70px;
     cursor: pointer;
-    width:300px;
-    border:5px solid grey;
+    width:15%;
 }
 
 .right-content {  
@@ -249,7 +248,7 @@ hr {
 @media (max-width:425px) {
 
     .main-container {
-        min-width: 270px;
+        min-width: 425px;
     }
     .left-content {
         display: none;
@@ -259,19 +258,23 @@ hr {
         font-size: .8rem;
     }
     input[type="text"] {
-    width: 25vw;
-    border: none;
+        width: 25vw;
+        border: none;
     }
+
     #nav-mic {
     display: none;
     }
+
     #profile-img {
     width: 15px;
     height: 15px;
     }
+
     .col {
     gap: 1rem;
     }
+
     .col .fa-youtube {
     margin-right: 1rem;
     }
@@ -282,7 +285,7 @@ hr {
         overflow-x: scroll;
         background-color:black;
         padding: .5rem;
-        margin-top: -50rem;
+        margin-bottom:.5rem;
     }
 
     .nav-bar ul li {
@@ -291,3 +294,15 @@ hr {
 
 
 }
+
+@media (max-width:1024px) {
+    .main-container {
+        min-width: 1024px;
+    }
+}
+
+@media (max-width:768px) {
+    .main-container {
+        min-width: 768px;
+    }
+} 
