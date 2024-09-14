@@ -7,14 +7,14 @@
 body {
     display: flex;
     justify-content: center;
+    background-color:black;
     overflow-x: hidden;
     scrollbar-width: none;
  
 }
 
 .main-container {
-    /* min-width: 1522px; */
-    background-color: black;
+    min-width: 1900px;
 }
 
 #img-logo {
@@ -35,7 +35,6 @@ body {
     align-items: center;
     font-size: 1.5rem;
     background-color:black;
-
     
 }
 i {
@@ -57,7 +56,7 @@ input {
 }
 .col i+i+h4 {
     margin-left: -1.9rem;
-    color: white;
+    color: gray;
     margin-top: -.2rem;
 }
 .col h4 sup {
@@ -85,16 +84,16 @@ input[type="text"] {
 
 }
 
-#search-nav-icon:hover {
-    outline: 1px solid white;
-}
-
 #nav-mic {
     font-size: 1rem;
     margin-left: -1rem;
     padding:.7rem ;
     background-color: #3E3E3E;
     border-radius: 2rem;
+}
+
+svg {
+    width: 26px;
 }
 
 .main-content{
@@ -107,15 +106,13 @@ input[type="text"] {
     position: sticky;
     top: 70px;
     cursor: pointer;
-    width: 400px;
-    overflow-y: scroll;
-    /* border: 10px solid pink; */
+    width:300px;
+    border:5px solid grey;
 }
 
 .right-content {  
-    /* flex-grow: 1; */
-    width: 85%; 
-    /* border: 2px solid rgb(2, 2, 10); */
+    width:85%;
+    flex-grow: 1;
 }
 
 .nav-bar {
@@ -207,7 +204,7 @@ hr {
 
 .right-body-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
 
 .box {
@@ -234,6 +231,7 @@ hr {
     gap: 1rem;
 }
 
+
 .box ul >li+li+li{
     margin-left: 4.2rem;
 }
@@ -248,3 +246,48 @@ hr {
     background-color:#071E33;
 }
 
+@media (max-width:425px) {
+
+    .main-container {
+        min-width: 270px;
+    }
+    .left-content {
+        display: none;
+    }
+     
+    .header  {
+        font-size: .8rem;
+    }
+    input[type="text"] {
+    width: 25vw;
+    border: none;
+    }
+    #nav-mic {
+    display: none;
+    }
+    #profile-img {
+    width: 15px;
+    height: 15px;
+    }
+    .col {
+    gap: 1rem;
+    }
+    .col .fa-youtube {
+    margin-right: 1rem;
+    }
+
+    .nav-bar {
+        position: sticky;
+        top: 37px;
+        overflow-x: scroll;
+        background-color:black;
+        padding: .5rem;
+        margin-top: -50rem;
+    }
+
+    .nav-bar ul li {
+        font-size: .5rem;
+    }
+
+
+}
